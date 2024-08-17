@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block start %}
+<title>Aroma || Contact Us</title>
+<h1>Contact Us</h1>
+<style>
+    /* Internal CSS for the contact page */
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+         background-color: rgb(67,86,163);
+        color: whitesmoke;
+    }
+    h1{
+        text-align: center;
+        font: 3em sans-serif;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .btn-primary {
+        background-color: yellow;
+        border-color: #007bff;
+        color: darkred;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+</style>
+<p>If you want membership pay to this number <strong> 7894561230 </strong>  just Rs.150 and enter your transaction id in comment box</p>
+<form method="post" action="">
+    {% csrf_token %}
+    <div class="form-group">
+      {{ form.name.label_tag }}
+      {{ form.name }}
+    </div>
+    <div class="form-group">
+        {{ form.email.label_tag }}
+        {{ form.email }}
+    </div>
+    <div class="form-group">
+        {{ form.message.label_tag }}
+        {{ form.message }}
+    </div>
+   <center><button type="submit" class="btn btn-primary">Send</button></center> 
+</form>
+{% endblock %}

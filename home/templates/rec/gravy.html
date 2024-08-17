@@ -1,0 +1,175 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Mushroom Gravy Recipe</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(58,7,81);
+    margin: 0;
+    padding: 0;
+    color: rgb(0,1,122);
+    font-weight: bolder;
+  }
+
+header {
+    background-color:rgb(242,200,91);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: rgb(40,6,89);
+}
+
+header p {
+     font: 1.2em sans-serif;
+     text-align:justify;
+     word-spacing: normal;
+     text-indent: 1.5em;
+}
+
+header a {
+    color: rgb(0,1,129);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: rgb(0,1,129);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.container p, .container li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.img-fluid {
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+.col-12 {
+    background-color: rgb(0,1,122);
+    
+    
+}
+.col-12 h3{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration:underline;
+}
+.col-12 p{
+    color: whitesmoke;
+    text-indent: 15px;
+}
+.col-5 {
+    padding: 15px;
+    background-color:rgb(255,185,0);
+}
+.col-4{
+    background-color: rgb(236,65,118);
+    margin-right: 15px;
+}
+.col-4 p{
+    color: rgb(244, 243, 239);
+    word-spacing: normal;
+}
+.col-4 h3,.col-5 h3{
+    color: whitesmoke;
+    font: 1.5em sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+.col-5 li{
+    color:rgb(249, 239, 249);
+}
+.row {
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    color: red;
+}
+li{
+    color: whitesmoke;
+}
+</style>
+</head>
+
+<body>
+    <button class="btn btn-outline-light btn-danger btn-sm"><a href="/home/">Back</a></button>
+    <header>
+        <section>
+            <h2>Mushroom Gravy Recipe</h2>
+            <p>A spin on the standard <a href="https://en.wikipedia.org/wiki/Mushroom_gravy">Mushroom Pizza </a>.
+              Mushroom Gravy is a quick finger lickingly good and rich gravy made with mushrooms.
+            Adding cashew powder and malai gives the gravy thickness and nice restaurant flavour so don't skip it.
+I used homemade kashmiri chilli powder.Add 1/2 tsp extra if you like spicy gravy.</p>
+        </section>
+    </header>
+    <div class="container">
+        <div class="row justify-content-md">
+            <div class="col-2">
+                <img src="{% static 'images/grav.jpg' %}" alt="cooking"width="180%" height="100%">
+                </div>
+                <div class="col-4">
+            <h3>TIMING</h3>
+             <p>Preparation Time:15 mins</p>
+             <p>Cooking Time:30 mins</p>
+            <p>TOTAL TIME :45 mins</p>
+             <p> Servings 3 Person</p> </div> 
+           
+ 
+             <div class="col-5">
+              <center><h3>Ingredients</h3></center>          
+            <ul>
+                <li>1.5 cups mushrooms sliced,1 tsp ginger garlic paste</li>
+                <li>1 big onion finely chopped,2 medium sized tomatoes pureed</li>
+                <li>1/4 tsp turmeric powder,1 tsp kashmiri red chilli powder</li>
+                <li>1/2 tsp coriander powder,1 tsp garam masala powder,1 tbsp cashew powder just powder it,1 tbsp malai from milk</li>
+                 <li>1 tsp kasoori methi,1 tbsp coriander leaves finely chopped</li>
+                 <li>1 cup water,1.5 tbsp oil, 1/4 inch cinnamon,1 no cardamom, small clove,1/2 tsp cumin seeds</li></ul></div></div><br>     
+            
+            <div class="col-12 p-3">
+                <center><h3>Preparation</h3></center> 
+           
+            <p>
+                Heat oil in a pan - add items listed under 'to temper' let it splutter then add onion saute until transparent then add ginger garlic paste and required salt.
+	          Saute until golden then add turmeric powder, red chilli powder and coriander powder. Give a quick saute.     
+	         Then add tomato puree cook until raw smell leaves and the mixture is thick and dry. Now add mushrooms.  
+	           Give a quick saute then add water mix well. Cook covered for 2 mins.	
+	           Now add cashewnut powder, malai and garam masala powder. Cook until oil floats on top. Finally garnish with kasoori methi and coriander leaves. Relish Mushroom Gravy!</p>               
+	</div></div>   
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

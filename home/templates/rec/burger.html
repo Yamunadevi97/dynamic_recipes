@@ -1,0 +1,171 @@
+{% load static %}
+<html>
+<head>
+    <title>Mushroom Veggie Burger</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+    /* food.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(58,7,81);
+    margin: 0;
+    padding: 0;
+    color: rgb(0,1,122);
+    font-weight: bolder;
+  }
+
+header {
+    background-color:rgb(242,200,91);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: rgb(40,6,89);
+}
+
+header p {
+     font: 1.2em sans-serif;
+     text-align:justify;
+     word-spacing: normal;
+     text-indent: 1.5em;
+}
+
+header a {
+    color: rgb(0,1,129);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: rgb(0,1,129);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.container p, .container li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.img-fluid {
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+.col-12 {
+    background-color: rgb(0,1,122);
+    
+    
+}
+.col-12 h3{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration:underline;
+}
+.col-12 p{
+    color: whitesmoke;
+    text-indent: 15px;
+}
+.col-5 {
+    padding: 15px;
+    background-color:rgb(255,185,0);
+}
+.col-4{
+    background-color: rgb(236,65,118);
+    margin-right: 15px;
+}
+.col-4 p{
+    color: rgb(244, 243, 239);
+    word-spacing: normal;
+}
+.col-4 h3,.col-5 h3{
+    color: whitesmoke;
+    font: 1.5em sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+.col-5 li{
+    color:rgb(249, 239, 249);
+}
+.row {
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    color: red;
+}
+</style>
+</head>
+<body>
+    <button class="btn btn-outline-light btn-danger btn-sm"><a href="/home/">Back</a></button>
+    <header>
+        <h1>Mushroom Veggie Burger</h1>
+        <section>
+            
+            <p>A spin on the standard <a href="https://en.wikipedia.org/wiki/Burger">Mushroom Burger </a>.
+            These vegetarian mushroom burgers are as close as I've ever gotten to delicious meatless burgers. Mushrooms really give them a meaty flavor.
+           I like to serve them on fresh hamburger rolls with spicy mayonnaise and a little lettuce.
+           <strong> we prefer,AY mushroom is good,fresh and healthy to eat</strong> </p>       
+ </section>
+    </header><br>
+    
+<div class="container">
+    <div class="row justify-content-md">
+        <div class="col-2">
+    <img src="{% static 'images/bu.jpg' %}"    alt="..." width="150%" height="100%">
+ </div>
+
+       <div class="col-4">
+        <h3>Timing</h3>
+            <p>Preparation Time: 15 Min</p>
+            <p>Cooking Time: 15 Min</p>
+            <p>Additional Timing: 15 min</p>
+            <p>TOTAL Time : 45 Min</p>
+            <p>Serve: 2 veggie burgers</p>
+      </div>
+      <div class="col-5">
+        <h3>Ingredients</h3>
+        <li>4 tablespoons olive oil, divided 3 (8 ounce) packages sliced fresh mushrooms</li>
+        
+        <li>½ medium onion, finely chopped 4 cloves garlic, minced</li>
+        
+        <li>1 teaspoon salt, ½ teaspoon black pepper,½ teaspoon dried oregano, ¾ cup dry bread crumbs</li>
+        
+        <li>⅔ cup rolled oats, ½ cup freshly shredded Parmigiano-Reggiano cheese,2 large eggs, beaten</li> </ul>
+      </div></div>
+      <div class="col-12 p-3">
+        <h3>Preparation</h3>
+        <p>Sauté mushrooms, onion, garlic, salt, pepper, and oregano in olive oil until liquid evaporates. Chop mushrooms,
+         mix with bread crumbs, oats, cheese, and beaten eggs. Form into patties and pan-fry until golden brown, about 2-3 minutes per side.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body></html>

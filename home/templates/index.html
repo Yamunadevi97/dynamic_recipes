@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+ integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"  crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Aroma || Home</title>     
+</head>
+<body>
+ {% block start %}
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-4 mb-4">
+   <div class="card">
+    <img src="{% static 'images/piz.jpg' %}"  >
+    <div class="card-body">
+     <h5 class="card-title">MUSHROOM PIZZA</h5>
+     <p class="card-text"  id="des">
+      Indulge in our gourmet Mushroom Pizza, featuring a blend of savory mushrooms, 
+      melted mozzarella, and a hint of truffle, baked to perfection on a crispy, handcrafted crust. </p>
+     <a href="/piz/" class=" btn btn-outline-light btn-danger btn-sm"><i class="fa-solid fa-eye"></i>  view recipie </a>
+     <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-heart"></i> </a>
+     </div> </div> </div>
+  <div class="col-lg-4 mb-4">
+     <div class="card">
+       <img src="{% static 'images/b.jpeg' %}"  >
+     <div class="card-body">
+      <h5 class="card-title">MUSHROOM BURGER</h5>
+      <p class="card-text"  id="des">
+       Savor the earthy richness of our Mushroom Burger, with a juicy patty topped with sautéed mushrooms,
+       melted cheese, and a dash of garlic aioli on a toasted brioche bun.  </p>
+        <a href="/bur/"  class=" btn btn-outline-light btn-danger btn-sm"> <i class="fa-solid fa-eye"></i>  view recipie  </a>
+         <a href="#" class="btn btn-outline-primary  btn-sm"> <i class="fa-regular fa-heart"></i> </a>
+       </div> </div> </div>
+   <div class="col-lg-4 mb-4">
+    <div class="card">
+    <img src="{% static 'images/noo.jpeg' %}"  >
+    <div class="card-body">
+    <h5 class="card-title">MUSHROOM NOODLES</h5>
+    <p class="card-text"  id="des">
+     Elevate your taste buds with our Mushroom Noodles, a delightful fusion of tender noodles tossed in a rich,
+    umami-packed mushroom sauce, garnished with fresh herbs. </p>
+   <a href="/no/" class="btn btn-outline-light btn-danger btn-sm"><i class="fa-solid fa-eye"></i>  view recipie </a>
+   <a href="#" class="btn btn-outline-primary btn-sm"> <i class="fa-regular fa-heart"></i> </a>
+   </div> </div> </div>
+   <div class="col-lg-4 mb-4">
+    <div class="card">
+    <img src="{% static 'images/sa.jpg' %}"  >
+    <div class="card-body">
+    <h5 class="card-title">MUSHROOM SANDWICH</h5>
+    <p class="card-text"  id="des">
+       Delight in our Mushroom Sandwich, featuring layers of sautéed mushrooms, 
+       melted Swiss cheese, and fresh arugula, all nestled between slices of toasted bread. </p>
+        <a href="/sand/" class="btn btn-outline-light btn-danger btn-sm"> <i class="fa-solid fa-eye"></i>view recipie </a>
+       <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-heart"></i> </a>
+     </div></div></div>
+    <div class="col-lg-4 mb-4">
+     <div class="card">
+         <img src="{% static 'images/g.jpeg' %}"  >
+     <div class="card-body">
+        <h5 class="card-title">MUSHROOM GRAVY</h5>
+        <p class="card-text"  id="des">
+            Indulge in our velvety Mushroom  Gravy, a rich blend of sautéed mushrooms simmered in a savory broth,
+            perfect for adding a gourmet touch to any dish.</p>
+        <a href="/grav/" class="btn btn-outline-light btn-danger btn-sm"><i class="fa-solid fa-eye"></i>   view recipie </a>
+       <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-regular fa-heart"></i></a>
+     </div></div> </div>
+    <div class="col-lg-4 mb-4">
+     <div class="card">
+      <img src="{% static 'images/soups.jpeg' %}" width="100px">
+      <div class="card-body">
+        <h5 class="card-title">MUSHROOM SOUP</h5>
+        <p class="card-text" id="des">
+         Savor the warmth of our creamy Mushroom Soup, a luscious blend of earthy mushrooms 
+         and aromatic herbs, pureed to perfection for a comforting </p>
+        <a href="/soup/" class="btn btn-outline-light btn-danger btn-sm"><i class="fa-solid fa-eye"></i> view recipie </a>
+         <a href="#" class="btn btn-outline-primary btn-sm"> <i class="fa-regular fa-heart"></i> </a>
+ </div></div></div></div></div></div></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"> </script>
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity= "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {% endblock %}
+</body>
+</html>

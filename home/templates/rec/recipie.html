@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipie</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}"/>
+    <script src="{% static '/js/script.js' %}" type="text/javascript"></script>  
+    <style>
+     table{
+      width:90%;
+     border-style: none;
+      height:300px;
+      background-color: antiquewhite;
+     text-align:center;
+     }
+     tr{
+      border-style: none;
+     }
+       img{
+  border-radius:75px;
+  border-color:white;
+  border-style:solid;
+  }
+body{
+  background:linear-gradient(to right,rgb(81, 224, 93),white,rgb(220,35,30));
+}
+h1{
+    color:rgb(27, 87, 216);
+    text-align:center;
+    font-size:45px;
+    font-style: italic;
+}
+h3{
+  color:rgb(27, 87, 216);
+    text-align:center;
+    font-size:20px;
+}
+    </style>
+</head>
+
+<body>
+  <script>
+    alert("welcome to Aroma Kitchen")
+  </script>
+  <h1>Popular Dishes</h1>
+  <h3>Select your favourite recipe and enjoy with your family</h3><br><br>
+ 
+        <table border="1">
+           <tr><td>
+            <a href="rec/pizza/">Pizza</a>
+           <strong><p>MUSHROOM PIZZA</p></strong></a><img src="{% static 'images/pizza.jpg' %}" alt="cooking" height="200px" width="200px"/> <br>
+               <button >View recipie</button></p></strong></td>           
+           <td><a href="burger.html"><img src="{% static 'images/burger.jpg' %}" alt="cooking" height="200px" width="200px"/><br></a>
+           <strong><p>MUSHROOM BURGER</p></strong><br><button >View recipie</button></td>
+          <td><a href="noodles.html"><img src="{% static 'images/noodles.jpg' %}" alt="cooking" height="200px" width="200px"/></a>
+            <strong><p>MUSHROOM NOODLES</p><button >View recipie</button><br></strong></td>                
+            <td> <a href="sandwich.html"><img src="{% static 'images/sandwich.jpg' %}" alt="cooking" height="200px" width="200px"/></a>
+                  <strong><p> MUSHROOM SANDWICH</p><button >View recipie</button></td> </tr>
+           <tr>
+            <td> <a href="gravy.html"><img src="{% static 'images/gravy.jpg' %}" alt="cooking" height="200px" width="200px"/></a>
+              <strong><p> MUSHROOM GRAVY</p><button >View recipie</button></td>            
+            <td><a href="soup.html"><img src="{% static 'images/soup.jpg' %}" alt="cooking" height="200px" width="200px"/></a>
+              <strong><p> MUSHROOM SOUP</p><button >View recipie</button></td>        
+            <td> <a href="nuggets.html"><img src="{% static 'images/n.jpg' %}" alt="cooking" height="200px" width="200px"/><br></a>
+              <strong><p>Mushroom Nuggets</p><button >View recipie</button></td>
+            <td> <a href="65.html"><img src="{% static 'images/65.jpg' %}" alt="cooking" height="200px" width="200px"/><br></a>
+              <strong><p>Mushroom 65</p><button >View recipie</button></td></tr>
+                <tr>
+            <td><a href="pepper.html"><img src="{% static 'images/p.jpg' %}" alt="cooking" height="200px" width="200px"/></a>
+              <p><strong>Peper fry</p><button >View recipie</button></td>
+            <td> <a href="roast.html"><img src="{% static 'images/r.jpg' %}" alt="cooking" height="200px" width="200px"/><br></a>
+              <strong><p>Mushroom Roast</p><button >View recipie</button></td>
+            <td><a href="b.html"><img src="{% static 'images/b.jpg' %}" alt="cooking" height="200px" width="200px"/><br></a>
+              <strong><p> Mushroom Bonda</p><button >View recipie</button></td>
+            <td><a href="b.html"><img src="{% static 'images/fritters.jpg' %}" alt="cooking" height="200px" width="200px"/><br></a>
+              <strong><p> Mushroom Fritters</p><button >View recipie</button></td></tr> </table></body>

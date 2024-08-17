@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load static %}
+{% block start %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma || About</title>
+    <meta name="viewport" content="width=device-width, 
+        initial-scale=1, shrink-to-fit=no">
+<style>
+  .about{
+    border: 1px solid #ccc;
+     margin: auto;
+  max-width: 150%; /* Maximum width is 90% of the viewport width */
+}
+p{
+    color: red;
+    font-size: larger;
+    text-align:center ;
+}
+#mail{
+    color: purple;
+    font-size: large;
+    text-align: center;
+  }
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .about {
+    max-width: 70%; /* Maximum width is 70% of the viewport width */
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    max-width: 50%; /* Maximum width is 50% of the viewport width */
+  }
+}
+  #about{
+    color: blue;
+    text-indent: 15px;
+    text-align: justify;
+  }
+</style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"   crossorigin="anonymous">
+        <!--fontawesome icons-->
+    <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity= "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"  crossorigin="anonymous">
+</head>
+<body>
+  <!--about-->
+ <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+      <h1 class="text-center">ABOUT US</h1>
+      <p id="about" >At AY Organic  Mushroom, we firmly believe that mushrooms are the ultimate superfood with the power to save our planet.
+       Our passion and commitment towards sustainable development and nurturing the economic, ecological and medicinal values of mushrooms have been the driving force behind our work
+       We believe that together we can create a world that is not just healthy and prosperous, but also one that is sustainable and environmentally friendly.
+       Join us on this exciting journey towards creating a sustainable future, and discover the immense potential of mushrooms. <br><br></p></p>
+       </div></div></div>
+       <!--about members-->
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/i.jpeg' %}" alt="ishu" >
+                <div class="card-body">
+                    <h5 class="card-title">Ishu</h5>
+                    <p class="card-text">
+                     <p>CEO & Founder</p>
+                     <p id="mail">ishu@gmail.com</p></p>
+                    <center><a href="/contact/" class="btn btn-outline-primary btn-sm">
+                        <i class="fa-solid fa-envelope"></i>  contact Us </a></center>
+                    </div> </div>  </div>
+          <div class="col-lg-4 mb-4">
+             <div class="card">
+                <img src="{% static 'images/c.jpeg' %}" alt="ishu"  height="200px">
+                  <div class="card-body">
+                    <h5 class="card-title">Aleem</h5>
+                    <p class="card-text">
+                    <p>Chef</p>                                      
+                    <p id="mail">aleem@gmail.com</p> </p>
+                    <center> <a href="/contact/" class="btn btn-outline-primary btn-sm">
+                     <i class="fa-solid fa-envelope"></i>  contact Us </a></center>
+                    </div></div> </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="{% static 'images/shiva.jpg' %}" alt="shiva" height="180px">
+                <div class="card-body">
+                 <h5 class="card-title">Shiva</h5>
+                 <p class="card-text">
+                 <p>ADMIN</p>                                                    
+                 <p id="mail">shiva@gmail.com</p> </p>
+                 <center><a href="/contact/" class="btn btn-outline-primary btn-sm">
+                  <i class="fa-solid fa-envelope"></i> contact Us </a></center>
+                    </div></div></div>
+                    </div></div>
+           <footer>&copy; ay recipies</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"   
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock %}
+ </body>
+</html>
